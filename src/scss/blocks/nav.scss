@@ -1,0 +1,173 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo {
+  z-index: 40;
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+
+  margin-left: auto;
+
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  @media (max-width: 992px) {
+    display: none;
+  }
+}
+
+.nav__link {
+  padding: 1rem;
+  display: block;
+
+  letter-spacing: 3px;
+  color: #6e7ea9;
+}
+
+.nav__link:hover {
+  color: #1085e4;
+}
+
+// Burger menu
+
+.burger-menu {
+
+  z-index: 40;
+
+  width: 50px;
+  height: 50px;
+
+  border: none;
+  border-radius: 50%;
+  background-color: #1085e4;
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.2);
+
+  cursor: pointer;
+
+  outline: none;
+
+  @media (min-width: 993px) {
+    display: none;
+  }
+
+  &:hover {
+    border: 1px solid #1085e4;
+    background-color: #fff;
+  }
+
+  &:hover .burger-menu__lines {
+    background-color: #1085e4;
+  }
+
+  &:hover .burger-menu__lines::before {
+    background-color: #1085e4;
+  }
+
+  &:hover .burger-menu__lines::after {
+    background-color: #1085e4;
+  }
+}
+
+.burger-menu__lines,
+.burger-menu__lines::before,
+.burger-menu__lines::after {
+  display: block;
+  margin: 0 auto;
+
+  width: 30px;
+  height: 3px;
+
+  border-radius: 2px;
+
+  position: relative;
+
+  background-color: #fff;
+
+  transition: 0.4s linear;
+}
+
+.burger-menu__lines::before {
+  content: "";
+  position: absolute;
+  top: -7px;
+}
+
+.burger-menu__lines::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+}
+
+// Burger Menu Active
+
+.burger-menu--active .burger-menu__lines {
+  background-color: transparent;
+}
+
+.burger-menu--active .burger-menu__lines::before {
+  top: 0;
+  transform: rotate(-45deg);
+}
+
+.burger-menu--active .burger-menu__lines::after {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+// Mobile nav
+
+.nav-mobile {
+  padding-top: 100px;
+  padding-bottom: 20px;
+
+  position: fixed;
+  top: 0;
+  right: -130%;
+  z-index: 30;
+
+  width: 320px;
+  height: 100vh;
+
+  background-color: $white;
+
+  text-align: center;
+
+  transition: 0.4s linear;
+}
+
+.nav__item--mobile {
+  font-weight: 600;
+
+  &:hover {
+    background-color: rgb(245, 245, 245);
+  }
+}
+
+// Mobile nav button
+.btn-free--mobile {
+  margin-left: 0;
+}
+
+// Burger Menu Active Hover
+.burger-menu--active {
+  &:hover .burger-menu__lines {
+    background-color: transparent;
+  }
+}
+
+// Burger Menu Active Nav Mobile
+.burger-menu--active+.nav-mobile {
+  display: block;
+  right: 0;
+
+  @media (min-width: 993px) {
+    display: none;
+  }
+}

@@ -1,0 +1,120 @@
+.software {
+  padding-top: 7rem;
+  padding-bottom: 11rem;
+  background-image: url(/dist/img/features2/laptop.png), url(/dist/img/features2/bg.png);
+  background-position: 0 100px, -70px 40px;
+  background-size: auto 90%, auto;
+  background-repeat: no-repeat, no-repeat;
+
+  @media (max-width: 1800px) {
+    background-position: 0 180px, -200px 45px;
+    background-size: auto 75%, auto;
+  }
+
+  @media (max-width: 1560px) {
+    background-position: 0 335px, -375px 60px;
+    background-size: auto 58%, auto;
+  }
+
+  @media (max-width: 1200px) {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+
+    background-image: none;
+  }
+
+
+}
+
+#scrollbar-style::-webkit-scrollbar {
+  width: 4px;
+  background-color: #f3f6ff;
+}
+
+#scrollbar-style::-webkit-scrollbar-thumb {
+  background-color: #1085e4;
+  border-radius: 10px;
+}
+
+.software__inner {
+  @include margin-minus;
+
+  display: flex;
+  justify-content: flex-end;
+
+  @media (max-width: 1200px) {
+    justify-content: center;
+  }
+}
+
+.software__column {
+  width: 55%;
+
+  @media (max-width: 1200px) {
+    width: 80%;
+  }
+}
+
+.software__icon {
+  @media (max-width: 1200px) {
+    display: none;
+  }
+}
+
+.software__title {
+  font-size: 3.1rem;
+  font-weight: 600;
+  line-height: 60px;
+  color: #192b59;
+
+  margin: 0;
+  margin-bottom: 1.9rem;
+
+  @media (max-width: 768px) {
+    font-size: 2.5rem;
+    line-height: 50px;
+    text-align: center;
+  }
+
+  @media (max-width: 576px) {
+    font-size: 2rem;
+    line-height: 40px;
+    margin-bottom: 1rem;
+  }
+}
+
+.software__text {
+  margin: 0;
+  margin-bottom: 1.9rem;
+}
+
+.software__list {
+  margin: 0;
+
+  max-height: 300px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.software__list dt {
+  font-weight: 700;
+  color: #5a6789;
+
+  margin-bottom: 0.6rem;
+}
+
+.software__list dd {
+  font-size: 14px;
+  color: #7581a1;
+
+  margin: 0;
+}
+
+.software__line {
+  height: 1px;
+  width: 510px;
+  border: none;
+  margin: 20px 0 25px 0;
+
+  background-color: #f2f2f2;
+}

@@ -1,0 +1,146 @@
+.form {
+  padding-top: 7.5rem;
+  padding-bottom: 7.5rem;
+
+  background: url("/dist/img/contact-form/bg.png") no-repeat center;
+  background-size: cover;
+}
+
+.form__inner {
+  @include margin-minus;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (max-width: 992px) {
+    justify-content: center;
+  }
+}
+
+.form__img {
+  @media (max-width: 992px) {
+    display: none;
+  }
+}
+
+.form__column {
+  flex-basis: 50%;
+
+  @media (max-width: 992px) {
+    flex-basis: 60%;
+  }
+
+  @media (max-width: 768px) {
+    flex-basis: 70%;
+  }
+
+  @media (max-width: 576px) {
+    flex-basis: 80%;
+  }
+}
+
+.form__title {
+  margin-bottom: 3.125rem;
+
+  font-size: 3.125rem;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #192b59;
+
+  @media (max-width: 992px) {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+
+// Form group
+.form-group {
+  max-width: 514px;
+
+  @media (max-width: 992px) {
+    text-align: right;
+  }
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+  padding: 1.6rem 3.75rem 1.6rem 2.5rem;
+  display: block;
+  width: 100%;
+
+  border: 2px solid rgba(72, 72, 72, 0.1);
+  border-radius: $brd-rad-35;
+  background-color: #ffffff;
+
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.875rem;
+
+  outline: none;
+
+  transition: 0.3s;
+
+  &::-webkit-input-placeholder {
+    color: #8995b3;
+  }
+
+  &:-ms-input-placeholder {
+    color: #8995b3;
+  }
+
+  &::-ms-input-placeholder {
+    color: #8995b3;
+  }
+
+  &::placeholder {
+    color: #8995b3;
+  }
+
+  &:focus {
+    border-color: dodgerBlue;
+    box-shadow: 0 0 8px 0 dodgerBlue;
+  }
+
+  @media (max-width: 425px) {
+    padding: 1.6rem 3rem 1.6rem 2.5rem;
+  }
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"] {
+  margin-bottom: 1.25rem;
+}
+
+.form-group textarea {
+  margin-bottom: 2.5rem;
+  height: 160px;
+}
+
+.withIcon {
+  position: relative;
+}
+
+.withIcon i {
+  position: absolute;
+  top: 28px;
+  right: 37px;
+  color: #8995b3;
+  transition: 0.3s;
+}
+
+.withIcon input[type="text"]:focus+i,
+.withIcon input[type="email"]:focus+i,
+.withIcon textarea:focus+i {
+  color: dodgerBlue;
+}
+
+// Button form
+.btn-form {
+  padding: 20px 50px;
+
+  & .fas {
+    margin-right: 10px;
+  }
+}

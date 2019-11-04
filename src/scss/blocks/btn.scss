@@ -1,0 +1,94 @@
+.btn-primary,
+.btn-secondary,
+.btn-info {
+  padding: 20px 40px;
+  display: inline-block;
+  border-radius: $brd-rad-30;
+
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+
+  cursor: pointer;
+
+  transition: all 0.3s linear;
+
+  @media (max-width: 576px) {
+    padding: 15px 25px;
+  }
+}
+
+.btn-primary {
+  color: $white;
+
+  background-color: $blue;
+  border: 1px solid $blue;
+
+  &:hover {
+    color: $blue;
+    background-color: $white;
+  }
+}
+
+.btn-secondary {
+  color: #7e8bae;
+
+  background-color: #bacbdc;
+  border: 1px solid #bacbdc;
+
+  &:hover {
+    background-color: #fff;
+  }
+}
+
+.btn-info {
+  color: #8085b1;
+
+  background-color: transparent;
+  border: 1px solid #dce1e5;
+
+  &:hover {
+    color: $white;
+    border: 1px solid $blue;
+    background-color: $blue;
+  }
+}
+
+.btn-free {
+  margin-left: 1.5rem;
+  padding: 20px 55px;
+  font-weight: 400;
+  letter-spacing: 1.7px;
+
+  @media (max-width: 1200px) {
+    margin-left: 0;
+  }
+}
+
+.btn-group {
+  display: flex;
+
+  @media (max-width: 1200px) {
+    justify-content: center;
+  }
+
+  @media (max-width: 768px) {
+    margin: 0 auto;
+    width: 50%;
+    flex-direction: column;
+  }
+
+  @media (max-width: 425px) {
+    width: 80%;
+  }
+}
+
+.btn-group .btn-primary {
+  margin-right: 1rem;
+
+  @media (max-width: 768px) {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+}

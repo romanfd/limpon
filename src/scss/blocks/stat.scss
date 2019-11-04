@@ -1,0 +1,139 @@
+.stat {
+  padding: 6.3rem 0;
+  position: relative;
+
+  background-color: #edf6ff;
+
+  @media (max-width: 576px) {
+    padding: 4rem 0;
+  }
+}
+
+.bg-circle {
+  display: block;
+  width: 663px;
+  height: 663px;
+
+  position: absolute;
+  left: -12%;
+  bottom: -53%;
+
+  background: url("/dist/img/stat/bg-circle.png") no-repeat;
+  background-size: contain;
+
+  @media (max-width: 1560px) {
+    width: 463px;
+    height: 463px;
+    bottom: -30%;
+  }
+
+  @media (max-width: 1200px) {
+    width: 363px;
+    height: 363px;
+    bottom: -5%;
+  }
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.bg-rhombus {
+  display: block;
+  width: 601px;
+  height: 673px;
+
+  position: absolute;
+  top: -40%;
+  right: 0;
+
+  background: url("/dist/img/stat/bg-rhombus.png") no-repeat;
+  background-size: contain;
+
+  @media (max-width: 1560px) {
+    width: 401px;
+    height: 473px;
+    top: -20%;
+  }
+
+  @media (max-width: 1200px) {
+    width: 301px;
+    height: 373px;
+    bottom: -5%;
+  }
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.stat__list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.stat__item {
+  @media (max-width: 576px) {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    flex-basis: 50%;
+    text-align: center;
+  }
+}
+
+.stat__title {
+  font-size: 3.12rem;
+  font-weight: 600;
+  line-height: 60px;
+  letter-spacing: -1.5px;
+  text-align: center;
+  color: $blue-title;
+
+  margin: 0 auto;
+  margin-bottom: 4rem;
+
+  max-width: 500px;
+
+  @media (max-width: 576px) {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    line-height: 30px;
+  }
+}
+
+.stat__title span {
+  font-size: 1rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: $blue;
+
+  display: block;
+}
+
+.stat__item {
+  @include padding-plus;
+
+  font-size: 0.75rem;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 2.7px;
+
+  color: $blue;
+}
+
+.stat__item span {
+  font-size: 60px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  color: $number-color;
+
+  display: block;
+
+  margin-bottom: 1.25rem;
+}

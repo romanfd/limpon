@@ -1,0 +1,89 @@
+@import "normalize";
+@import "variables";
+@import "mixin";
+
+
+/* Basic styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: $blue-text;
+
+  background-color: $white;
+
+  transition: all 0.5s;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  border-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 1110px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Blocks */
+@import "blocks/scroll";
+@import "blocks/header";
+@import "blocks/btn";
+@import "blocks/nav";
+@import "blocks/intro";
+@import "blocks/sponsors";
+@import "blocks/grid";
+@import "blocks/subscribe";
+@import "blocks/software";
+@import "blocks/stat";
+@import "blocks/app";
+@import "blocks/analytics";
+@import "blocks/screen";
+@import "blocks/clients";
+@import "blocks/plans";
+@import "blocks/team";
+@import "blocks/form";
+@import "blocks/footer";

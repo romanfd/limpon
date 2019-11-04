@@ -1,0 +1,179 @@
+.plans {
+  padding-top: 6rem;
+  padding-bottom: 7.5rem;
+
+  @media (max-width: 992px) {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+.plans__inner {
+  @include margin-minus;
+}
+
+.plans__title {
+  font-size: 2.5rem;
+  line-height: 1.25;
+  font-weight: 600;
+  letter-spacing: -1.5px;
+  text-align: center;
+  color: #192b59;
+
+  margin: 0;
+  margin-bottom: 5rem;
+
+  @media (max-width: 992px) {
+    margin-bottom: 2rem;
+  }
+
+  @media (max-width: 576px) {
+    font-size: 2rem;
+  }
+}
+
+.plans__title span {
+  font-size: 1.125rem;
+  line-height: 3;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 3.3px;
+  color: #1085e4;
+
+  display: block;
+}
+
+/* Box-price */
+.box-price {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  @media (max-width: 992px) {
+    flex-direction: column;
+  }
+}
+
+.box-price__item {
+  text-align: center;
+  color: #8085b1;
+
+  padding: 85px 58px 97px;
+
+  background-color: #f5faff;
+
+  position: relative;
+
+  overflow: hidden;
+
+  @media (max-width: 1200px) {
+    padding: 35px;
+  }
+
+  @media (max-width: 992px) {
+    margin-bottom: 2rem;
+    width: 50%;
+  }
+
+  @media (max-width: 576px) {
+    width: 80%;
+  }
+}
+
+.box-price__item--angle::after {
+  content: "";
+
+  position: absolute;
+
+  top: -5px;
+  right: -40px;
+  height: 650px;
+  width: 70px;
+
+  transform: rotate(-6deg);
+  background-color: #edf4fb;
+}
+
+.box-price__item.active {
+  color: #ffffff;
+  background-color: #192b59;
+}
+
+.box-price__title {
+  font-size: 4.4rem;
+  line-height: 40px;
+  font-weight: 700;
+  color: #000958;
+
+  margin: 0;
+
+  @media (max-width: 992px) {
+    font-size: 3rem;
+  }
+
+  @media (max-width: 576px) {
+    font-size: 2rem;
+  }
+}
+
+.box-price__item:first-child .box-price__title {
+  margin-bottom: 1.25rem;
+}
+
+.box-price__title--mod {
+  color: #7b8ab2;
+}
+
+.box-price__text {
+  font-size: 0.9rem;
+  line-height: 40px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #0084ff;
+
+  margin: 0;
+  margin-bottom: 1.3rem;
+
+  @media (max-width: 576px) {
+    line-height: 0;
+  }
+}
+
+.box-price__text.active {
+  color: #ffffff;
+}
+
+.box-price__title span {
+  font-size: 1.25rem;
+}
+
+.box-price__title.active {
+  color: #ffffff;
+}
+
+.box-price__list {
+  list-style: none;
+
+  margin: 0;
+  margin-bottom: 3.3rem;
+  padding: 0;
+
+  @media (max-width: 576px) {
+    margin-bottom: 1rem;
+  }
+}
+
+.box-price__list li {
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+.btn--plans {
+  padding: 20px 60px;
+
+  @media (max-width: 425px) {
+    padding: 15px 28px;
+  }
+}

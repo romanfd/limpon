@@ -1,0 +1,21 @@
+.header {
+  width: 100%;
+  padding: 0.6rem 0;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 30;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: relative;
+}
+
+.header--active {
+  background-color: rgba(211, 233, 255, 0.8);
+}

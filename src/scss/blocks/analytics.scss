@@ -1,0 +1,72 @@
+/* Analytics first block */
+.analytics {
+  padding-top: 7.5rem;
+  padding-bottom: 7.5rem;
+
+  background: url("/dist/img/features3/bg.png") no-repeat center;
+  background-size: cover;
+
+  @media (max-width: 992px) {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+
+.analytics__inner {
+  @include margin-minus;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: relative;
+
+  @media (max-width: 992px) {
+    flex-direction: column-reverse;
+
+    text-align: center;
+  }
+}
+
+.analytics__column {
+  @include padding-plus;
+
+  @media (max-width: 992px) {
+    margin-bottom: 2rem;
+    width: 80%;
+  }
+}
+
+.analytics__img {
+  display: block;
+}
+
+.analytics__icon {
+  @media (max-width: 992px) {
+    display: none;
+  }
+}
+
+.analytics__title {
+  margin-bottom: 1.5rem;
+
+  font-size: 3.125rem;
+  line-height: 60px;
+  font-weight: 600;
+  color: #192b59;
+
+  @media (max-width: 576px) {
+    font-size: 2rem;
+    line-height: 40px;
+  }
+}
+
+.analytics__text {
+  margin-bottom: 1.9rem;
+}
+
+/* Analytics second block */
+.analytics--second {
+  background: url("/dist/img/features4/bg.png") no-repeat center;
+  background-size: cover;
+}

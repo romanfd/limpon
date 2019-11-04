@@ -1,0 +1,158 @@
+.team {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+
+  background: url("/dist/img/team/bg.png") no-repeat;
+  background-size: cover;
+
+  @media (max-width: 992px) {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+.team__inner {
+  @include margin-minus;
+}
+
+.team__title {
+  margin-bottom: 8.5rem;
+
+  font-size: 2.5rem;
+  line-height: 1.25;
+  font-weight: 600;
+  letter-spacing: -1.5px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.team__title span {
+  font-size: 1.125rem;
+  line-height: 3;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 3.3px;
+  color: #85c8ff;
+
+  display: block;
+}
+
+// Team list
+.team__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  @media (max-width: 992px) {
+    @include padding-plus;
+    justify-content: space-evenly;
+  }
+}
+
+.team__item {
+  padding-top: 13rem;
+  padding-bottom: 2.5rem;
+  flex-basis: 31.5%;
+  position: relative;
+
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 8px 30px 0 rgba(156, 156, 156, 0.1);
+
+
+  @media (max-width: 992px) {
+    margin-bottom: 8rem;
+    flex-basis: 45%;
+
+    &:last-child {
+      margin-bottom: 2rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    flex-basis: 55%;
+  }
+
+  @media (max-width: 576px) {
+    flex-basis: 75%;
+  }
+
+  @media (max-width: 425px) {
+    flex-basis: 100%;
+  }
+}
+
+.team__photo {
+  position: absolute;
+  top: -86px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.team__position {
+  font-size: 0.875rem;
+  letter-spacing: 2px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #1a88e1;
+}
+
+.team__name {
+  margin-bottom: 1.5rem;
+
+  font-size: 1.625rem;
+  letter-spacing: -1.3px;
+  font-weight: 600;
+  color: #192b59;
+}
+
+// Button plus
+.btn--plus {
+  width: 50px;
+  height: 50px;
+
+  color: #a1aecf;
+
+  background-color: #f3f3f3;
+  border: none;
+  border-radius: 50%;
+
+  outline: none;
+
+  cursor: pointer;
+
+  &:hover {
+    background-color: #1a88e1;
+    color: #ffffff;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+}
+
+// Social items
+.social__list {
+  display: none;
+
+  justify-content: center;
+}
+
+.social__item {
+  margin: 0 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #fafafa;
+
+  font-size: 14px;
+  color: #9ea6b1;
+
+  &:hover {
+    background-color: #1a88e1;
+    color: #ffffff;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+}
